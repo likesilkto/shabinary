@@ -4,16 +4,16 @@
 from setuptools import setup, find_packages
 
 import sys
-sys.path.append('./src')
+sys.path.append('./shabinary')
 sys.path.append('./tests')
 
 
 setup(
 	name= 'shabinary', # Application name:
-	version= '0.1.0', # Version number
+	version= '0.1.1', # Version number
 
 	author= 'Masayuki Tanaka', # Author name
-	author_email= 'm@likesilkto', # Author mail	
+	author_email= 'm@like.silk.to', # Author mail	
 
 	url='https://github.com/likesilkto/shabinary', # Details
 	description='Secure Hash Algorithm library for binary data.', # short description
