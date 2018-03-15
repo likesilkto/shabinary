@@ -10,7 +10,7 @@ sys.path.append('./tests')
 
 setup(
 	name= 'shabinary', # Application name:
-	version= '0.1.2', # Version number
+	version= '0.1.3', # Version number
 
 	author= 'Masayuki Tanaka', # Author name
 	author_email= 'm@like.silk.to', # Author mail	
@@ -23,8 +23,12 @@ setup(
 	],
 	
 	include_package_data=False, # Include additional files into the package
-	packages=['shabinary'],
-
+	
+	#packages=find_packages(exclude=('tests', 'docs')),
+	packages = ['shabinary'],
+	package_dir={'shabinary':'shabinary'},
+    
+    
 	test_suite = 'tests',
 
 	classifiers=[
