@@ -4,13 +4,12 @@
 from setuptools import setup, find_packages
 
 import sys
-sys.path.append('./shabinary')
 sys.path.append('./tests')
 
 
 setup(
 	name= 'shabinary', # Application name:
-	version= '0.1.3', # Version number
+	version= '0.1.4', # Version number
 
 	author= 'Masayuki Tanaka', # Author name
 	author_email= 'm@like.silk.to', # Author mail	
@@ -26,7 +25,7 @@ setup(
 	
 	#packages=find_packages(exclude=('tests', 'docs')),
 	packages = ['shabinary'],
-	package_dir={'shabinary':'shabinary'},
+	package_dir={'shabinary':''},
     
     
 	test_suite = 'tests',
